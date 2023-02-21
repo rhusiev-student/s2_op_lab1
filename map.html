@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d7ceae8ad7cc8acbfe2b9e2c2105c7a9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d7ceae8ad7cc8acbfe2b9e2c2105c7a9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d7ceae8ad7cc8acbfe2b9e2c2105c7a9 = L.map(
+                "map_d7ceae8ad7cc8acbfe2b9e2c2105c7a9",
+                {
+                    center: [35.7128, -78.006],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7d6df7a93ea2674c4d26a5fc61a63ca2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d7ceae8ad7cc8acbfe2b9e2c2105c7a9);
+        
+    
+            var feature_group_eae769996c610a798460a9d9d2843234 = L.featureGroup(
+                {}
+            ).addTo(map_d7ceae8ad7cc8acbfe2b9e2c2105c7a9);
+        
+    
+            var marker_9233dad5d28fd97afc93c66984cdeb0d = L.marker(
+                [35.7128, -78.006],
+                {}
+            ).addTo(feature_group_eae769996c610a798460a9d9d2843234);
+        
+    
+            var icon_e39a1453c176ede1da05080bb03b5794 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9233dad5d28fd97afc93c66984cdeb0d.setIcon(icon_e39a1453c176ede1da05080bb03b5794);
+        
+    
+        var popup_f246346ea586053f27b1d03b2f433158 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var i_frame_57faf1548a09c38932dc01de185c8dde = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8aDQ+IEdvdCBpbmZvcm1hdGlvbjogPC9oND4KICAgIENvb3JkaW5hdGVzOiAzNS43MTI4LCAtNzguMDA2IDxicj4KICAgIFllYXI6IDIwMTYgPGJyPgogICAgPGJyPgogICAgR3JheSAtIGFsbCBmaWxtcyBvZiB0aGlzIHllYXIgPGJyPgogICAgR3JlZW4gLSBjbG9zZXN0IGZpbG1zIDxicj4KICAgIA==" width="300" style="border:none !important;" height="100"></iframe>`)[0];
+                popup_f246346ea586053f27b1d03b2f433158.setContent(i_frame_57faf1548a09c38932dc01de185c8dde);
+            
+        
+
+        marker_9233dad5d28fd97afc93c66984cdeb0d.bindPopup(popup_f246346ea586053f27b1d03b2f433158)
+        ;
+
+        
+    
+    
+            var feature_group_74969c7aa61d06c6be3da4b90e05642f = L.featureGroup(
+                {}
+            ).addTo(map_d7ceae8ad7cc8acbfe2b9e2c2105c7a9);
+        
+    
+            var marker_16f61bff3121f67caabb52d6419c14a2 = L.marker(
+                [43.6534817, -79.3839347],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_92a4fbc86f6f6f06d64970626e8dd676 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_16f61bff3121f67caabb52d6419c14a2.setIcon(icon_92a4fbc86f6f6f06d64970626e8dd676);
+        
+    
+        var popup_721f302ca7667dad1e7972a7bbf32887 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7b458cbf71287eb2aabd782961126a8 = $(`<div id="html_d7b458cbf71287eb2aabd782961126a8" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_721f302ca7667dad1e7972a7bbf32887.setContent(html_d7b458cbf71287eb2aabd782961126a8);
+            
+        
+
+        marker_16f61bff3121f67caabb52d6419c14a2.bindPopup(popup_721f302ca7667dad1e7972a7bbf32887)
+        ;
+
+        
+    
+    
+            var marker_6b91cae78b52e1d233f6212024939997 = L.marker(
+                [35.1460249, -90.0517638],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_6f9512ba31bce613a4c6de633be16327 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_6b91cae78b52e1d233f6212024939997.setIcon(icon_6f9512ba31bce613a4c6de633be16327);
+        
+    
+        var popup_87ffc9ea1987b5f822d61f043570cc2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1667a298667b4dffaebeaa20f61e3a9e = $(`<div id="html_1667a298667b4dffaebeaa20f61e3a9e" style="width: 100.0%; height: 100.0%;">"#MyCurrentSituation: Atlanta"</div>`)[0];
+                popup_87ffc9ea1987b5f822d61f043570cc2b.setContent(html_1667a298667b4dffaebeaa20f61e3a9e);
+            
+        
+
+        marker_6b91cae78b52e1d233f6212024939997.bindPopup(popup_87ffc9ea1987b5f822d61f043570cc2b)
+        ;
+
+        
+    
+    
+            var marker_a43125b166aa9fdf012682d67dd32f09 = L.marker(
+                [49.8955367, -97.1384584],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_8573efc3f09f8ca3e195839c0f497aeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a43125b166aa9fdf012682d67dd32f09.setIcon(icon_8573efc3f09f8ca3e195839c0f497aeb);
+        
+    
+        var popup_8fbf1dfa3ac439364c7afee7433964e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86362a574c81ab43d4a7c6bb89167ceb = $(`<div id="html_86362a574c81ab43d4a7c6bb89167ceb" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_8fbf1dfa3ac439364c7afee7433964e8.setContent(html_86362a574c81ab43d4a7c6bb89167ceb);
+            
+        
+
+        marker_a43125b166aa9fdf012682d67dd32f09.bindPopup(popup_8fbf1dfa3ac439364c7afee7433964e8)
+        ;
+
+        
+    
+    
+            var marker_cdbd6aab7670f7b1a2a211180b481c3b = L.marker(
+                [51.0460954, -114.065465],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_37b06d36636f6148bae1c50fc02cda2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_cdbd6aab7670f7b1a2a211180b481c3b.setIcon(icon_37b06d36636f6148bae1c50fc02cda2b);
+        
+    
+        var popup_90cf6cb4dd1ca1ad4890a4703768bea6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa6de6537db73002aa0221e4e3e558c6 = $(`<div id="html_aa6de6537db73002aa0221e4e3e558c6" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_90cf6cb4dd1ca1ad4890a4703768bea6.setContent(html_aa6de6537db73002aa0221e4e3e558c6);
+            
+        
+
+        marker_cdbd6aab7670f7b1a2a211180b481c3b.bindPopup(popup_90cf6cb4dd1ca1ad4890a4703768bea6)
+        ;
+
+        
+    
+    
+            var marker_4f2f786bab84236f5fed9b2828e34b1e = L.marker(
+                [51.1777781, -115.5682504],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_9877f4fee98ed6829102badb8fdf2b6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_4f2f786bab84236f5fed9b2828e34b1e.setIcon(icon_9877f4fee98ed6829102badb8fdf2b6f);
+        
+    
+        var popup_4825a006dcc8e95918747bdf78cf66f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_390ace3b9c123992695cfd33ebb7fd39 = $(`<div id="html_390ace3b9c123992695cfd33ebb7fd39" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_4825a006dcc8e95918747bdf78cf66f8.setContent(html_390ace3b9c123992695cfd33ebb7fd39);
+            
+        
+
+        marker_4f2f786bab84236f5fed9b2828e34b1e.bindPopup(popup_4825a006dcc8e95918747bdf78cf66f8)
+        ;
+
+        
+    
+    
+            var marker_0a700f7da8e225fe37c8d4e4174724c5 = L.marker(
+                [61.0666922, -107.991707],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_8e3f0578f1ab36e20b565a70a4e69ee3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_0a700f7da8e225fe37c8d4e4174724c5.setIcon(icon_8e3f0578f1ab36e20b565a70a4e69ee3);
+        
+    
+        var popup_6346f07cc867e8e3930298b00aec3700 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_475dae9f7881475cf367ceeae9e0177f = $(`<div id="html_475dae9f7881475cf367ceeae9e0177f" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_6346f07cc867e8e3930298b00aec3700.setContent(html_475dae9f7881475cf367ceeae9e0177f);
+            
+        
+
+        marker_0a700f7da8e225fe37c8d4e4174724c5.bindPopup(popup_6346f07cc867e8e3930298b00aec3700)
+        ;
+
+        
+    
+    
+            var marker_abe4637441fe4942ae74775480ad1307 = L.marker(
+                [55.001251, -115.002136],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_df1a935718b1013b36781899a974c22a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_abe4637441fe4942ae74775480ad1307.setIcon(icon_df1a935718b1013b36781899a974c22a);
+        
+    
+        var popup_70000634913df6c89e1a053bba0ac135 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0cdc7db85fc55f74cfceb2969a1ed3f4 = $(`<div id="html_0cdc7db85fc55f74cfceb2969a1ed3f4" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_70000634913df6c89e1a053bba0ac135.setContent(html_0cdc7db85fc55f74cfceb2969a1ed3f4);
+            
+        
+
+        marker_abe4637441fe4942ae74775480ad1307.bindPopup(popup_70000634913df6c89e1a053bba0ac135)
+        ;
+
+        
+    
+    
+            var marker_87400ecffdf44759b7396ad57bcf2183 = L.marker(
+                [36.7014631, -118.755997],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_96282097b2ebac8db4e0b4441b65ff7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_87400ecffdf44759b7396ad57bcf2183.setIcon(icon_96282097b2ebac8db4e0b4441b65ff7c);
+        
+    
+        var popup_13ee234e8065b19d9b128392b3d38949 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f428631f04820f8a955f21c8f503b41 = $(`<div id="html_9f428631f04820f8a955f21c8f503b41" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_13ee234e8065b19d9b128392b3d38949.setContent(html_9f428631f04820f8a955f21c8f503b41);
+            
+        
+
+        marker_87400ecffdf44759b7396ad57bcf2183.bindPopup(popup_13ee234e8065b19d9b128392b3d38949)
+        ;
+
+        
+    
+    
+            var marker_f990f846945c988dce0fbd56834b4a29 = L.marker(
+                [34.1812089, -118.307201],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_3937de38eb0c040e5262b013398adb79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_f990f846945c988dce0fbd56834b4a29.setIcon(icon_3937de38eb0c040e5262b013398adb79);
+        
+    
+        var popup_be789aab5daf02580ab439d4dc0d4bcd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e366bbe7e34bfab6236b3be822432b7 = $(`<div id="html_4e366bbe7e34bfab6236b3be822432b7" style="width: 100.0%; height: 100.0%;">"#KillTorrey"</div>`)[0];
+                popup_be789aab5daf02580ab439d4dc0d4bcd.setContent(html_4e366bbe7e34bfab6236b3be822432b7);
+            
+        
+
+        marker_f990f846945c988dce0fbd56834b4a29.bindPopup(popup_be789aab5daf02580ab439d4dc0d4bcd)
+        ;
+
+        
+    
+    
+            var marker_a661763c4b907b5a6912065b3d519098 = L.marker(
+                [50.8367991, -118.9826386],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_38fd1c514554871468aab4934cfe6fed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a661763c4b907b5a6912065b3d519098.setIcon(icon_38fd1c514554871468aab4934cfe6fed);
+        
+    
+        var popup_2178046d3ca3d1f66745782b71f1b53a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bbdd0c8da138966b11d4902db4fe33c = $(`<div id="html_3bbdd0c8da138966b11d4902db4fe33c" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_2178046d3ca3d1f66745782b71f1b53a.setContent(html_3bbdd0c8da138966b11d4902db4fe33c);
+            
+        
+
+        marker_a661763c4b907b5a6912065b3d519098.bindPopup(popup_2178046d3ca3d1f66745782b71f1b53a)
+        ;
+
+        
+    
+    
+            var marker_84ad994e5fb3e0e5c6e6a3263c768584 = L.marker(
+                [34.2345615, -118.5369316],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_92da4b14a0b447e9ac492d2aee371834 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_84ad994e5fb3e0e5c6e6a3263c768584.setIcon(icon_92da4b14a0b447e9ac492d2aee371834);
+        
+    
+        var popup_b0f7b69aea4db94c8c4a0f579b43e54a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0ca20e6a6adc2697c851e68581ee459 = $(`<div id="html_a0ca20e6a6adc2697c851e68581ee459" style="width: 100.0%; height: 100.0%;">"#SpongeyLeaks"</div>`)[0];
+                popup_b0f7b69aea4db94c8c4a0f579b43e54a.setContent(html_a0ca20e6a6adc2697c851e68581ee459);
+            
+        
+
+        marker_84ad994e5fb3e0e5c6e6a3263c768584.bindPopup(popup_b0f7b69aea4db94c8c4a0f579b43e54a)
+        ;
+
+        
+    
+    
+            var marker_ffe970065dcde3ebe679d0058d223d50 = L.marker(
+                [49.8879177, -119.495902],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_461d4b21049587d41f07d3a8e64376a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ffe970065dcde3ebe679d0058d223d50.setIcon(icon_461d4b21049587d41f07d3a8e64376a2);
+        
+    
+        var popup_bd97e6db7802173b37c54fccf49907bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b016035963d4e5c31c31427e5308a76 = $(`<div id="html_4b016035963d4e5c31c31427e5308a76" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_bd97e6db7802173b37c54fccf49907bd.setContent(html_4b016035963d4e5c31c31427e5308a76);
+            
+        
+
+        marker_ffe970065dcde3ebe679d0058d223d50.bindPopup(popup_bd97e6db7802173b37c54fccf49907bd)
+        ;
+
+        
+    
+    
+            var marker_1ccddf2b275ce8f5217f6fb3a73b8d2f = L.marker(
+                [49.3799622, -121.44162],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_48483eb07654cfa8ced06dc94d8745ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_1ccddf2b275ce8f5217f6fb3a73b8d2f.setIcon(icon_48483eb07654cfa8ced06dc94d8745ea);
+        
+    
+        var popup_8b935c8c1b3e28554b8fdcc679336389 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce7b8ee90ab3ddcc0755ebeb2c5c3829 = $(`<div id="html_ce7b8ee90ab3ddcc0755ebeb2c5c3829" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_8b935c8c1b3e28554b8fdcc679336389.setContent(html_ce7b8ee90ab3ddcc0755ebeb2c5c3829);
+            
+        
+
+        marker_1ccddf2b275ce8f5217f6fb3a73b8d2f.bindPopup(popup_8b935c8c1b3e28554b8fdcc679336389)
+        ;
+
+        
+    
+    
+            var marker_969417fc5294078cc163c5a25ce4bd89 = L.marker(
+                [49.8681162, -121.443249],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_ef05c3b867d9be5f8ba9c9222a6af2dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_969417fc5294078cc163c5a25ce4bd89.setIcon(icon_ef05c3b867d9be5f8ba9c9222a6af2dc);
+        
+    
+        var popup_0dca0497674ae76e654fd347621f7520 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51302b712a48ccd6d0b6d24f10736b97 = $(`<div id="html_51302b712a48ccd6d0b6d24f10736b97" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_0dca0497674ae76e654fd347621f7520.setContent(html_51302b712a48ccd6d0b6d24f10736b97);
+            
+        
+
+        marker_969417fc5294078cc163c5a25ce4bd89.bindPopup(popup_0dca0497674ae76e654fd347621f7520)
+        ;
+
+        
+    
+    
+            var marker_89e023ef1c32e64e7e3c8ad1c6b8b604 = L.marker(
+                [53.0666687, -121.5166749],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_205ff2456cef9cb785150ce129788b1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_89e023ef1c32e64e7e3c8ad1c6b8b604.setIcon(icon_205ff2456cef9cb785150ce129788b1a);
+        
+    
+        var popup_8ac67550bb0b9a7cff5f06573f5e2ea7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc9e224d6f77eef3f3bce8a589d20fea = $(`<div id="html_fc9e224d6f77eef3f3bce8a589d20fea" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_8ac67550bb0b9a7cff5f06573f5e2ea7.setContent(html_fc9e224d6f77eef3f3bce8a589d20fea);
+            
+        
+
+        marker_89e023ef1c32e64e7e3c8ad1c6b8b604.bindPopup(popup_8ac67550bb0b9a7cff5f06573f5e2ea7)
+        ;
+
+        
+    
+    
+            var marker_0170aa3880ea51ce17b7af1a5ec9644f = L.marker(
+                [53.1173414, -121.49901337494916],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_fe4bcd62b0f9516957af9f5634d6dbcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_0170aa3880ea51ce17b7af1a5ec9644f.setIcon(icon_fe4bcd62b0f9516957af9f5634d6dbcc);
+        
+    
+        var popup_3610c997d34756106c8186220f48ea9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abe880962e827c24a28a51b21cf7cf50 = $(`<div id="html_abe880962e827c24a28a51b21cf7cf50" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_3610c997d34756106c8186220f48ea9c.setContent(html_abe880962e827c24a28a51b21cf7cf50);
+            
+        
+
+        marker_0170aa3880ea51ce17b7af1a5ec9644f.bindPopup(popup_3610c997d34756106c8186220f48ea9c)
+        ;
+
+        
+    
+    
+            var marker_1b66a4efa69a47c38e69be1499facaeb = L.marker(
+                [53.1044428, -121.5723679],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_57c8801aebc60592e9f880750f882dda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_1b66a4efa69a47c38e69be1499facaeb.setIcon(icon_57c8801aebc60592e9f880750f882dda);
+        
+    
+        var popup_1606bcca37604c59d05fbb951631511a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ad3ecd16e4cb209e8855a3b32bdfd33 = $(`<div id="html_2ad3ecd16e4cb209e8855a3b32bdfd33" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_1606bcca37604c59d05fbb951631511a.setContent(html_2ad3ecd16e4cb209e8855a3b32bdfd33);
+            
+        
+
+        marker_1b66a4efa69a47c38e69be1499facaeb.bindPopup(popup_1606bcca37604c59d05fbb951631511a)
+        ;
+
+        
+    
+    
+            var marker_c18309e40a9caa7e237f62d9081fd635 = L.marker(
+                [53.0402309, -121.718755],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_bdfd1f97028c3240ee1959313f5fbdd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_c18309e40a9caa7e237f62d9081fd635.setIcon(icon_bdfd1f97028c3240ee1959313f5fbdd1);
+        
+    
+        var popup_7da0af85f0d798cb36a97d7cd56aeb55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36685477657e95ef46c31b137a2b493f = $(`<div id="html_36685477657e95ef46c31b137a2b493f" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_7da0af85f0d798cb36a97d7cd56aeb55.setContent(html_36685477657e95ef46c31b137a2b493f);
+            
+        
+
+        marker_c18309e40a9caa7e237f62d9081fd635.bindPopup(popup_7da0af85f0d798cb36a97d7cd56aeb55)
+        ;
+
+        
+    
+    
+            var marker_2f1239f1bec902e12e1524b79411e10b = L.marker(
+                [49.2842958, -122.793281],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_873e09bb322b84aa6b9cc0517e18b2e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2f1239f1bec902e12e1524b79411e10b.setIcon(icon_873e09bb322b84aa6b9cc0517e18b2e3);
+        
+    
+        var popup_78724e040ce20fb680232f37eab57e5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdd1b28ea2e482b8e9cded2e253851ed = $(`<div id="html_fdd1b28ea2e482b8e9cded2e253851ed" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_78724e040ce20fb680232f37eab57e5e.setContent(html_fdd1b28ea2e482b8e9cded2e253851ed);
+            
+        
+
+        marker_2f1239f1bec902e12e1524b79411e10b.bindPopup(popup_78724e040ce20fb680232f37eab57e5e)
+        ;
+
+        
+    
+    
+            var marker_c03499259552e2fe6adb3204df5d1c93 = L.marker(
+                [49.2433804, -122.972545],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_788b58d4d73f09d36b98d96154c4862a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_c03499259552e2fe6adb3204df5d1c93.setIcon(icon_788b58d4d73f09d36b98d96154c4862a);
+        
+    
+        var popup_58383aea365c43a63c9e441e7f1e656c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0f02ba7659a11a7caf471e17f9c5279 = $(`<div id="html_e0f02ba7659a11a7caf471e17f9c5279" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_58383aea365c43a63c9e441e7f1e656c.setContent(html_e0f02ba7659a11a7caf471e17f9c5279);
+            
+        
+
+        marker_c03499259552e2fe6adb3204df5d1c93.bindPopup(popup_58383aea365c43a63c9e441e7f1e656c)
+        ;
+
+        
+    
+    
+            var marker_110c9b4e5998544d6c338f1be9e3f8ea = L.marker(
+                [49.3206294, -123.0737925],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_88b59304e30b24633baf98d74e5cdec5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_110c9b4e5998544d6c338f1be9e3f8ea.setIcon(icon_88b59304e30b24633baf98d74e5cdec5);
+        
+    
+        var popup_a74e957661ad3d80fcc2c6c2d2e06981 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a05ab8fddddfa2510cf652f9ca7aeba = $(`<div id="html_7a05ab8fddddfa2510cf652f9ca7aeba" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_a74e957661ad3d80fcc2c6c2d2e06981.setContent(html_7a05ab8fddddfa2510cf652f9ca7aeba);
+            
+        
+
+        marker_110c9b4e5998544d6c338f1be9e3f8ea.bindPopup(popup_a74e957661ad3d80fcc2c6c2d2e06981)
+        ;
+
+        
+    
+    
+            var marker_3b154674706d0d478e55cc9b94f9e1b6 = L.marker(
+                [49.2608724, -123.113952],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_3b3aff33c3d722f910481f3d6eeb0c03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3b154674706d0d478e55cc9b94f9e1b6.setIcon(icon_3b3aff33c3d722f910481f3d6eeb0c03);
+        
+    
+        var popup_2fbacb5f14d4b92a800ae6e5ab585504 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b97c3b1370b2e910f37b1f33f7f1aff5 = $(`<div id="html_b97c3b1370b2e910f37b1f33f7f1aff5" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_2fbacb5f14d4b92a800ae6e5ab585504.setContent(html_b97c3b1370b2e910f37b1f33f7f1aff5);
+            
+        
+
+        marker_3b154674706d0d478e55cc9b94f9e1b6.bindPopup(popup_2fbacb5f14d4b92a800ae6e5ab585504)
+        ;
+
+        
+    
+    
+            var marker_152ab1e4f5fe708a7bcce499a5e4d629 = L.marker(
+                [49.163168, -123.137414],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_4cfe1e0ac49ef555b0bbe9bc9fb3df4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_152ab1e4f5fe708a7bcce499a5e4d629.setIcon(icon_4cfe1e0ac49ef555b0bbe9bc9fb3df4f);
+        
+    
+        var popup_cd3709c9af89a717f5813584bd8ad9a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0078ec9c36e6a88469c479fbe7b6649e = $(`<div id="html_0078ec9c36e6a88469c479fbe7b6649e" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_cd3709c9af89a717f5813584bd8ad9a6.setContent(html_0078ec9c36e6a88469c479fbe7b6649e);
+            
+        
+
+        marker_152ab1e4f5fe708a7bcce499a5e4d629.bindPopup(popup_cd3709c9af89a717f5813584bd8ad9a6)
+        ;
+
+        
+    
+    
+            var marker_ee6cc07830e68c72cd36e92f3c3f58b9 = L.marker(
+                [49.3019112, -123.14154052837662],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_cdca55070520e66ddf24a4379efd4335 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ee6cc07830e68c72cd36e92f3c3f58b9.setIcon(icon_cdca55070520e66ddf24a4379efd4335);
+        
+    
+        var popup_76f54c89821a3f138eca6f49d3f2b83c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c51062a29a8aceecebdb4ebb81c2330 = $(`<div id="html_5c51062a29a8aceecebdb4ebb81c2330" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_76f54c89821a3f138eca6f49d3f2b83c.setContent(html_5c51062a29a8aceecebdb4ebb81c2330);
+            
+        
+
+        marker_ee6cc07830e68c72cd36e92f3c3f58b9.bindPopup(popup_76f54c89821a3f138eca6f49d3f2b83c)
+        ;
+
+        
+    
+    
+            var marker_afa257e0ebef0f669dc3dcdec57e182c = L.marker(
+                [52.9794279, -122.493627],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_7ac7a9d13379ab7602d7388f3f0eb5df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_afa257e0ebef0f669dc3dcdec57e182c.setIcon(icon_7ac7a9d13379ab7602d7388f3f0eb5df);
+        
+    
+        var popup_097aca275304af3e0f1de447db72c16e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ca8b9d1b8011cdb4927413c335d56db = $(`<div id="html_6ca8b9d1b8011cdb4927413c335d56db" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_097aca275304af3e0f1de447db72c16e.setContent(html_6ca8b9d1b8011cdb4927413c335d56db);
+            
+        
+
+        marker_afa257e0ebef0f669dc3dcdec57e182c.bindPopup(popup_097aca275304af3e0f1de447db72c16e)
+        ;
+
+        
+    
+    
+            var marker_3a02861a022313d6a5c1c14209201437 = L.marker(
+                [53.0154665, -122.4950096],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_89c0e3d1a6edfcaead07637b6f691c4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_3a02861a022313d6a5c1c14209201437.setIcon(icon_89c0e3d1a6edfcaead07637b6f691c4f);
+        
+    
+        var popup_1bc4bd4ebe13c35f49d9f6eb6a8e6a7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9bee63e68638a790d022a39ea1107982 = $(`<div id="html_9bee63e68638a790d022a39ea1107982" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_1bc4bd4ebe13c35f49d9f6eb6a8e6a7f.setContent(html_9bee63e68638a790d022a39ea1107982);
+            
+        
+
+        marker_3a02861a022313d6a5c1c14209201437.bindPopup(popup_1bc4bd4ebe13c35f49d9f6eb6a8e6a7f)
+        ;
+
+        
+    
+    
+            var marker_96a03d41ea2e1fb199a12e9eb9d4d1db = L.marker(
+                [55.001251, -125.002441],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_906c8917ec42a1c21746c734d58aea1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_96a03d41ea2e1fb199a12e9eb9d4d1db.setIcon(icon_906c8917ec42a1c21746c734d58aea1c);
+        
+    
+        var popup_e26a72e612809e67afeb14e30c50f2ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f52f1658c7123976908c705a9a66c5e3 = $(`<div id="html_f52f1658c7123976908c705a9a66c5e3" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_e26a72e612809e67afeb14e30c50f2ee.setContent(html_f52f1658c7123976908c705a9a66c5e3);
+            
+        
+
+        marker_96a03d41ea2e1fb199a12e9eb9d4d1db.bindPopup(popup_e26a72e612809e67afeb14e30c50f2ee)
+        ;
+
+        
+    
+    
+            var marker_b1c2f3ca31f7eeaf61ce8ae8b6158690 = L.marker(
+                [51.0, 10.0],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_6d02523e200e5e8cba03e3adca65aaff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_b1c2f3ca31f7eeaf61ce8ae8b6158690.setIcon(icon_6d02523e200e5e8cba03e3adca65aaff);
+        
+    
+        var popup_e7e008324bfa53022fd3644235e2a824 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0e6d301c3419b7e94b589f81d22e43e = $(`<div id="html_b0e6d301c3419b7e94b589f81d22e43e" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_e7e008324bfa53022fd3644235e2a824.setContent(html_b0e6d301c3419b7e94b589f81d22e43e);
+            
+        
+
+        marker_b1c2f3ca31f7eeaf61ce8ae8b6158690.bindPopup(popup_e7e008324bfa53022fd3644235e2a824)
+        ;
+
+        
+    
+    
+            var marker_1d196a739ba1134ba2dfc2ea862d1285 = L.marker(
+                [-22.9997404, -43.3659929],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_bd9c3131dc2b281d954488eed8b1b862 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_1d196a739ba1134ba2dfc2ea862d1285.setIcon(icon_bd9c3131dc2b281d954488eed8b1b862);
+        
+    
+        var popup_46534e097f975b18998780030a3bdc3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f993de745a129d46b7178b49336de5fd = $(`<div id="html_f993de745a129d46b7178b49336de5fd" style="width: 100.0%; height: 100.0%;">"#Fuga"</div>`)[0];
+                popup_46534e097f975b18998780030a3bdc3d.setContent(html_f993de745a129d46b7178b49336de5fd);
+            
+        
+
+        marker_1d196a739ba1134ba2dfc2ea862d1285.bindPopup(popup_46534e097f975b18998780030a3bdc3d)
+        ;
+
+        
+    
+    
+            var marker_2c54802ea3c802c3c180a657799d1a7e = L.marker(
+                [47.4979937, 19.0403594],
+                {}
+            ).addTo(feature_group_74969c7aa61d06c6be3da4b90e05642f);
+        
+    
+            var icon_47da97284b972d64adaef71faad2d6bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_2c54802ea3c802c3c180a657799d1a7e.setIcon(icon_47da97284b972d64adaef71faad2d6bd);
+        
+    
+        var popup_8053ab15cee7d99791cafd0b0d29c167 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cddf717cc60bf4c2bd39997e4461e757 = $(`<div id="html_cddf717cc60bf4c2bd39997e4461e757" style="width: 100.0%; height: 100.0%;">"#VanLifeAttila"</div>`)[0];
+                popup_8053ab15cee7d99791cafd0b0d29c167.setContent(html_cddf717cc60bf4c2bd39997e4461e757);
+            
+        
+
+        marker_2c54802ea3c802c3c180a657799d1a7e.bindPopup(popup_8053ab15cee7d99791cafd0b0d29c167)
+        ;
+
+        
+    
+    
+            var feature_group_89b5d14c747280d3030cd5d6abc8df2f = L.featureGroup(
+                {}
+            ).addTo(map_d7ceae8ad7cc8acbfe2b9e2c2105c7a9);
+        
+    
+            var marker_03af914f7810ff78fe877e1da621ccf9 = L.marker(
+                [37.270973, -79.9414313],
+                {}
+            ).addTo(feature_group_89b5d14c747280d3030cd5d6abc8df2f);
+        
+    
+            var icon_ab2b2bf9608de6ce9524a0ef632b890f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_03af914f7810ff78fe877e1da621ccf9.setIcon(icon_ab2b2bf9608de6ce9524a0ef632b890f);
+        
+    
+        var popup_b6abd61dcd4f7c3570292d024c7682a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4dd9e7996dfbdd35430ca9d716f4938 = $(`<div id="html_d4dd9e7996dfbdd35430ca9d716f4938" style="width: 100.0%; height: 100.0%;">"#SmurTv"</div>`)[0];
+                popup_b6abd61dcd4f7c3570292d024c7682a3.setContent(html_d4dd9e7996dfbdd35430ca9d716f4938);
+            
+        
+
+        marker_03af914f7810ff78fe877e1da621ccf9.bindPopup(popup_b6abd61dcd4f7c3570292d024c7682a3)
+        ;
+
+        
+    
+    
+            var marker_232e6b501d7cb9c6b623f64e48e9e8fc = L.marker(
+                [35.2272086, -80.8430827],
+                {}
+            ).addTo(feature_group_89b5d14c747280d3030cd5d6abc8df2f);
+        
+    
+            var icon_f127a866f51ba2418107f9fbacfefe24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_232e6b501d7cb9c6b623f64e48e9e8fc.setIcon(icon_f127a866f51ba2418107f9fbacfefe24);
+        
+    
+        var popup_75fbd66dd787f9a0edc61e6222e1e885 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b2344fdb16b04c3d9859ad2cf4c6333 = $(`<div id="html_6b2344fdb16b04c3d9859ad2cf4c6333" style="width: 100.0%; height: 100.0%;">"#SmurTv"</div>`)[0];
+                popup_75fbd66dd787f9a0edc61e6222e1e885.setContent(html_6b2344fdb16b04c3d9859ad2cf4c6333);
+            
+        
+
+        marker_232e6b501d7cb9c6b623f64e48e9e8fc.bindPopup(popup_75fbd66dd787f9a0edc61e6222e1e885)
+        ;
+
+        
+    
+    
+            var marker_50d137b48eb438cd22822f62530486cd = L.marker(
+                [33.7489924, -84.3902644],
+                {}
+            ).addTo(feature_group_89b5d14c747280d3030cd5d6abc8df2f);
+        
+    
+            var icon_9d808b221dba3fa5d59199a4992998e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_50d137b48eb438cd22822f62530486cd.setIcon(icon_9d808b221dba3fa5d59199a4992998e8);
+        
+    
+        var popup_3917b78eea777793c089304297dc9693 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1162bf9f5077e1bd02e010bf041f10d0 = $(`<div id="html_1162bf9f5077e1bd02e010bf041f10d0" style="width: 100.0%; height: 100.0%;">"#SmurTv"</div>`)[0];
+                popup_3917b78eea777793c089304297dc9693.setContent(html_1162bf9f5077e1bd02e010bf041f10d0);
+            
+        
+
+        marker_50d137b48eb438cd22822f62530486cd.bindPopup(popup_3917b78eea777793c089304297dc9693)
+        ;
+
+        
+    
+    
+            var marker_2f8041aa4e9d305c638a0b0dcd4927c3 = L.marker(
+                [40.6526006, -73.9497211],
+                {}
+            ).addTo(feature_group_89b5d14c747280d3030cd5d6abc8df2f);
+        
+    
+            var icon_0e75c3f6b752112ca16abf0d858fb570 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2f8041aa4e9d305c638a0b0dcd4927c3.setIcon(icon_0e75c3f6b752112ca16abf0d858fb570);
+        
+    
+        var popup_5830795200bc3ac843da60d45a0f4166 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d07b4b178b342c54e1eff4742ae2109e = $(`<div id="html_d07b4b178b342c54e1eff4742ae2109e" style="width: 100.0%; height: 100.0%;">"#LoveMyRoomie"</div>`)[0];
+                popup_5830795200bc3ac843da60d45a0f4166.setContent(html_d07b4b178b342c54e1eff4742ae2109e);
+            
+        
+
+        marker_2f8041aa4e9d305c638a0b0dcd4927c3.bindPopup(popup_5830795200bc3ac843da60d45a0f4166)
+        ;
+
+        
+    
+    
+            var marker_66d091343034ea597fd3bc9222e48923 = L.marker(
+                [40.7127281, -74.0060152],
+                {}
+            ).addTo(feature_group_89b5d14c747280d3030cd5d6abc8df2f);
+        
+    
+            var icon_e53b4ce8174f5791848d4327c31d7d81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_66d091343034ea597fd3bc9222e48923.setIcon(icon_e53b4ce8174f5791848d4327c31d7d81);
+        
+    
+        var popup_710de72f234a1eb9e327ed233d3eb824 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_666f5d909425497f739787416926fc1f = $(`<div id="html_666f5d909425497f739787416926fc1f" style="width: 100.0%; height: 100.0%;">"#LoveMyRoomie"</div>`)[0];
+                popup_710de72f234a1eb9e327ed233d3eb824.setContent(html_666f5d909425497f739787416926fc1f);
+            
+        
+
+        marker_66d091343034ea597fd3bc9222e48923.bindPopup(popup_710de72f234a1eb9e327ed233d3eb824)
+        ;
+
+        
+    
+</script>
+</html>
