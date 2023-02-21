@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "lab1"
+version = "0.1.0"
+description = "Lab1 OP"
+authors = ["radomyr <h.radomyr@proton.me>"]
+license = "GPLv3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
