@@ -17,6 +17,12 @@ The program will create a map with the closest films to North Carolina that were
 
 ![Screen Shot 2023-02-21 at 23 01 46](https://user-images.githubusercontent.com/63148080/220457708-09991c7b-0333-47b6-99d3-fdb2ba71af79.png)
 
+The red circle is the given position
+
+The blue circles are the positions of the closest films shot in that year
+
+The gray circles are the positions of the other films shot in that year
+
 
 # Requirements
 - folium
