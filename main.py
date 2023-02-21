@@ -1,3 +1,8 @@
+"""
+Lab1 closest films of a given year
+
+https://github.com/rhusiev-student/s2_op_lab1
+"""
 import folium
 import argparse
 import haversine
